@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+body {
+  user-select: none;
+}
+
+.menu_list {
+  height: 150px;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.pagination li {
+  display: inline-block;
+  margin: 0 0.5em;
+  cursor: pointer;
+}

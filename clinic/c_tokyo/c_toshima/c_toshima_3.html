@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yahoo-clinic</title>
+  <meta name="description" content="sample text">
+  <!-- ノーマライズcss -->
+  <link rel="stylesheet" href="../../../css/modern-normalize.css">
+
+  <link rel="stylesheet" href="../../../css/c_city.css">
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <!-- ヘッダー -->
+    <header class="home-header">
+      <div class="header-contents">
+        <!-- ヘッダー上部 -->
+        <div class="container">
+          <div class="area-header-top">
+            <div class="area-header-logo">
+              <a class="header-logo" href="../../../index.html">
+                <img src="../../../images/yahoo_realestate_logo.png" alt="yahoo_re_logo">
+              </a>
+            </div>
+            <div class="area-header-search">
+              <!-- <input type="search"> -->
+            </div>
+          </div>
+        </div>
+        <!-- ヘッダー下部 -->
+        <div class="area-header-bottom">
+          <div class="container">
+            <ul class="list-header-nav">
+              <li class="item-header-nav">
+                <a class="" href="../../../index.html">トップ</a>
+              </li>
+              <li class="item-header-nav">
+                <a class="" href="#">病院</a>
+              </li>
+              <li class="item-header-nav">
+                <a class="" href="#">新築マンション</a>
+              </li>
+              <li class="item-header-nav">
+                <a class="" href="#">中古マンション</a>
+              </li>
+              <li class="item-header-nav">
+                <a class="" href="#">お問い合わせ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ヘッダーバー -->
+        <div class="header-bottom-bar"></div>
+      </div>
+    </header>
+
+    <!-- パンくず -->
+    <nav class="Breadcrumbs">
+      <div class="container">
+        <ul class="Breadcrumb">
+          <li class="Breadcrumb-list">
+            <a href="../../../index.html">
+              <span itemprop="name">Yahoo!不動産トップ</span>
+              <meta itemprop="position" content="1">
+            </a>
+          </li>
+          <li class="Breadcrumb-list">
+            <a href="../c_tokyo.html">
+              <span itemprop="name">東京都の病院を探す</span>
+              <meta itemprop="position" content="1">
+            </a>
+          </li>
+          <li class="Breadcrumb-list">
+            <a href="c_toshima_1.html">
+              <span itemprop="name">豊島区</span>
+              <meta itemprop="position" content="1">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- メインラップ -->
+    <main>
+      <div class="container">
+
+        <!-- メインヘッド -->
+        <div class="main-head">
+          <h1 class="main-head-ttl">
+            <span>豊島区</span><span>の病院</span>
+          </h1>
+        </div>
+        <!-- クリニック一覧 -->
+        <div class="clinic-search">
+          <div class="clinic-result">
+            <div class="clinic-result-status">
+
+            </div>
+            <!-- クリニック結果ボックス -->
+            <div class="clinic-result-box">
+              <ul class="clinic-result-list">
+                <!-- <li class="clinic-result-item">
+                  <div class="clinic-result-item-ttl">
+                    <h2 class="clinic-name">はせがわ眼科</h2>
+                  </div>
+                  <div class="clinic-detail">
+                    <ul class="clinic-detail-list">
+                      <li class="clinic-detail-item">
+                        <img src="../../../images/location-icon.png" alt="location-icon">
+                        <span>東京都板橋区成増二丁目14番5号 EH第2ビル2階A室</span>
+                      </li>
+                      <li class="clinic-detail-item">
+                        <img src="../../../images/phone-icon.png" alt="location-icon">
+                        <span>03-5998-1222</span>
+                      </li>
+                      <li class="clinic-detail-item">
+                        <img src="../../../images/railway-icon.png" alt="location-icon">
+                        <span>成増駅</span>
+                        <span>地下鉄成増駅</span>
+                      </li>
+                      <li class="clinic-detail-item">
+                        <img src="../../../images/stethoscope-icon2.png" alt="location-icon">
+                        <span>眼科</span>
+                        <span>皮膚科</span>
+                        <span>内科</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li> -->
+                <!-- <li class="clinic-result-item">
+                  <div class="clinic-result-item-ttl">
+                    <h2 class="clinic-name">はせがわ眼科</h2>
+                  </div>
+                  <div class="clinic-detail">
+                    <ul class="clinic-detail-list">
+                      <li class="clinic-detail-item">
+                        <img src="../../../images/location-icon.png" alt="location-icon">
+                        <span>東京都板橋区成増二丁目14番5号 EH第2ビル2階A室</span>
+                      </li>
+                      <li class="clinic-detail-item">
+                        <img src="../../../images/phone-icon.png" alt="location-icon">
+                        <span>03-5998-1222</span>
+                      </li>
+                      <li class="clinic-detail-item">
+                        <img src="../../../images/railway-icon.png" alt="location-icon">
+                        <span>成増駅</span>
+                      </li>
+                      <li class="clinic-detail-item">
+                        <img src="../../../images/stethoscope-icon2.png" alt="location-icon">
+                        <span>眼科</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+
+            <!-- ページネーション -->
+            <p id="pagination-count"></p>
+            <ul class="pagination">
+              <li id="pagination-prev"><a href="#">&lt;</a>
+              </li>
+              <!-- <li class="pagination-number is-current"><a href="#">1</a></li> -->
+              
+              <li id="pagination-next"><a href="#">&gt;</a></li>
+            </ul>
+
+
+          </div>
+
+          <!-- クリニックソート -->
+          <aside class="clinic-sort">
+            <div class="search-condition">
+              <h2 class="search-condition-ttl">検索条件</h2>
+              <div class="search-condition-box">
+                <!-- 診療科目 -->
+                <div class="search-subject">
+                  <p class="search-subject-ttl">診療科目</p>
+                  <ul class="subject-box-list">
+                    <li class="subject-box-item">
+                      <a href="#">内科</a>
+                    </li>
+                    <li class="subject-box-item">
+                      <a href="#">歯科</a>
+                    </li>
+                    <li class="subject-box-item">
+                      <a href="#">眼科</a>
+                    </li>
+                    <li class="subject-box-item">
+                      <a href="#">皮膚科</a>
+                    </li>
+                    <li class="subject-box-item">
+                      <a href="#">耳鼻科</a>
+                    </li>
+                    <li class="subject-box-item">
+                      <a href="#">精神科</a>
+                    </li>
+                    <li class="subject-box-item">
+                      <a href="#">整形外科</a>
+                    </li>
+                    <li class="subject-box-item">
+                      <a href="#">小児科</a>
+                    </li>
+                    <li class="subject-box-item">
+                      <a href="#">婦人科</a>
+                    </li>
+                    <li class="subject-box-item">
+                      <a href="#">泌尿器科</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- エリア検索 -->
+                <div class="search-region">
+                  <p class="search-subject-ttl">エリアを再選択</p>
+                  <!-- セレクトボックス -->
+                  <div class="select-box jp-block">
+                    <select class="select-region select-category-1">
+                      <option>エリアを選択</option>
+                    </select>
+                  </div>
+                  <div class="select-box jp-prefecture">
+                    <select class="select-region select-category-2" disabled>
+                      <option>都道府県を選択</option>
+                    </select>
+                  </div>
+                  <div class="select-box jp-city">
+                    <select class="select-region select-category-3" disabled>
+                      <option>市区町村を選択</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </aside>
+
+        </div>
+
+      </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="home-footer">
+      <div class="footer-contents">
+        <div class="sns-section">
+          <div class="container">
+            <div class="area-sns-btn">
+              <ul class="sns-btn">
+                <li class="sns-btn-item"><a class="twitter-icon" href="#"><img src="../../../images/twitter-icon.png"
+                      alt="twitter-img"></a></li>
+                <li class="sns-btn-item"><a class="youtube-icon" href="#"><img src="../../../images/youtube-icon.png"
+                      alt="youtube-img"></a></li>
+                <li class="sns-btn-item"><a class="insta-icon" href="#"><img src="../../../images/instagram-icon.png"
+                      alt="insta-img"></a></li>
+              </ul>
+            </div>
+            <div class="area-sns-desc">
+              <div class="sns-desc">
+                <p>公式SNSアカウント</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="corp-section">
+          <div class="container">
+            <ul class="corp-list">
+              <li class="corp-item"><a href="#">プライバシーポリシー</a></li>
+              <li class="corp-item"><a href="#">利用規約</a></li>
+              <li class="corp-item"><a href="#">免責事項</a></li>
+              <li class="corp-item"><a href="#">ご意見・ご要望</a></li>
+              <li class="corp-item"><a href="#">お問い合わせ</a></li>
+            </ul>
+            <small class="footer-copyright">© LY Corporation</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  
+  <script src="../../../json/c_toshima.js">
+    export {c_list}
+  </script>
+  <script type="module" src="../../../js/city.js">
+    import {c_list} from "../../../json/c_toshima.js"
+  </script>
+  <script src="../../../js/select-box.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+html{
+  font-size: 10px;
+}
+
+a, img {
+  user-select: none;
+  text-decoration: none;
+}
+
+body {
+  color: #333;
+  font-family: "メイリオ",Meiryo,"Hiragino Sans","ヒラギノ角ゴシック","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","Yu Gothic",Arial,Helvetica,sans-serif;
+}
+
+
+/* container */
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1010px;
+}
+
+/* ヘッダー上部 */
+.header-contents{
+}
+.area-header-top {
+  /* background-color: rgb(219, 219, 219); */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+}
+.header-logo {
+  display: block;
+}
+.header-logo img {
+  height: 34px;
+  vertical-align: bottom;
+}
+.area-header-search {
+  margin-left: auto;
+}
+
+/* ヘッダー下部 */
+.area-header-bottom {
+  background-color: #008277;
+  height: 40px;
+}
+.area-header-bottom > .container {
+  height: 100%;
+}
+.list-header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 0;
+}
+.list-header-nav a {
+  display: block;
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+}
+/* ヘッダーバー */
+.header-bottom-bar {
+  box-shadow: inset 0px 15px 20px -15px rgb(0 0 0 / 9%);
+height: 14px;
+background-color: #f7f7f5;
+border-bottom: 1px solid #d0cec9;
+}
+
+/* パンくず */
+.Breadcrumb {
+  font-size: 13px;
+  margin: 15px auto;
+  width: 990px;
+}
+.Breadcrumb-list {
+  display: inline-block;
+}
+.Breadcrumb-list:not(:last-child):after {
+  content: '>';
+  margin: 0 5px;
+  color: #838383;
+  font-size: 1.7rem;
+}
+.Breadcrumb-list a {
+}
+.Breadcrumb-list span {
+  color: #006acc;
+}
+
+/* メインヘッド */
+.main-head {
+  border-bottom: 3px solid #008277;
+  margin: 20px 0 20px;
+  padding-bottom: 2px;
+}
+.main-head .main-head-ttl {
+  font-size: 26px;
+  color: #524939;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+}
+.main-head span:nth-of-type(even) {
+  font-size: 20px;
+  padding: 0 3px;
+}
+
+/* シティセレクト */
+.city-select {
+  width: 660px;
+  margin-top: 30px;
+}
+.city-select-inner {
+  background-color: #f7f7f5;
+  padding: 15px 15px 30px 15px;
+}
+.city-select-ttl {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.city-select-list {
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 14px;
+}
+.city-select-item {
+  font-size: 14px;
+  padding-right: 14px;
+  position: relative;
+}
+.city-select-item:not(:last-child)::after {
+  background-color: #bcbcbc;
+  bottom: 0;
+  content: "";
+  display: inline-block;
+  height: 14px;
+  margin: auto;
+  width: 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.city-select-item a {
+  font-weight: 600;
+  color: #006acc;
+}
+
+.city-select-23out {
+  margin-top: 30px;
+}
+
+
+/* フッター */
+footer {
+  margin-top: 60px;
+}
+/* フッターSNS */
+.sns-section {
+  background-color: #f7f7f5;
+}
+.sns-section .container {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.area-sns-btn {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sns-btn {
+  display: flex;
+}
+.sns-btn li a {
+  display: block;
+  margin: 0 5px;
+  padding: 0px 15px;
+}
+.sns-btn-item img {
+  width: 40px;
+}
+.area-sns-desc {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  margin-top:17px;
+}
+.sns-desc p {
+  color: #757575;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+}
+
+
+/* フッターcorp */
+.corp-section {
+  background-color: #008277;
+}
+.corp-section .container {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px 0;
+}
+.corp-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.corp-list a {
+  color: #fff;
+  font-size: 14px;
+}
+.corp-list li:not(:last-child)::after {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin: 0 5px;
+  vertical-align: middle;
+  width: 5px;
+}
+.footer-copyright {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+}
